@@ -21,19 +21,24 @@
 		<div class="container mt-5">
 			<div class="card">
 				<div class="card-header">
-					<h3>Busca de endereço - Digite o CEP</h3>
+					<h3>Busca de endereço</h3>
 				</div>
 
 				<div class="card-body">
 					<form action="/envia-cep" method="POST">
 						<div class="form-group">
-							<label for="cep">Cep</label>
-							<input class="form-control" type="text" name="cep" id="cep" />
+							<label for="uf">UF</label>
+							<input class="form-control" type="text" name="uf" id="uf" />
+							<label for="localidade">Localidade (Cidade)</label>
+							<input class="form-control" type="text" name="localidade" id="localidade" />
+							<label for="logradouro">Logradouro (Rua ou Avenida)</label>
+							<input class="form-control" type="text" name="logradouro" id="logradouro" />
 							<input
 								type="submit"
 								class="btn btn-outline-success mt-2"
 								value="Buscar"
 							/>
+							
 						</div>
 					</form>
 				</div>
