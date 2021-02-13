@@ -17,6 +17,8 @@ const Navbar = lazy(() => import('./components/layout/Navbar')) //aplicação la
 const Footer = lazy(() => import('./components/layout/Footer')) //aplicação lazy loading 
 const Landing = lazy(() => import('./components/home/Landing')) //aplicação lazy loading 
 
+const CompSSR = lazy(() => import('./compSSR'))
+
 
 class App extends Component {
 	render() {
@@ -29,6 +31,10 @@ class App extends Component {
                     </Suspense>
 
 					<Suspense fallback={ <Spinner/> }>
+						<CompSSR />;
+                    </Suspense>
+
+					<Suspense fallback={ <Spinner/> }>
 						<Route exact path="/" component={Landing} />
                     </Suspense>
 
@@ -37,7 +43,11 @@ class App extends Component {
 					<Suspense fallback={ <Spinner/> }>
 						<Footer />;
                     </Suspense>
-						
+
+				
+
+				     
+
 					</div>
 				</Router>
 			</Provider>

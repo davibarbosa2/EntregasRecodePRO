@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-back-intermed"]=this["webpackJsonpreact-back-intermed"]||[]).push([[3],{79:function(e,t,c){"use strict";c.r(t);c(0);var n=c(1);t.default=function(){return Object(n.jsx)("div",{children:Object(n.jsx)("div",{className:"text-center bg-danger text-dark",children:Object(n.jsx)("p",{className:"text-dark font-weight-bold",children:"Este componente est\xe1 sendo renderizado por SSR"})})})}}}]);
+//# sourceMappingURL=3.3a3b2f07.chunk.js.map
